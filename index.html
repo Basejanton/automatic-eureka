@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BaseJanton</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Header styles */
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            color: #e0e0e0;
+        }
+
+        /* Content styles */
+        .content {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            padding: 0 20px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        /* Video container */
+        .video-container {
+            width: 90%;
+            max-width: 700px;
+            border: 5px solid rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to BaseJanton</h1>
+    <h2>The home of a unique love story</h2>
+    <p class="content"><strong>Speakers loud, screen bright, and enjoy in all its full HD glory</strong></p>
+    <div class="video-container">
+        <!-- Replace YOUR_VIDEO_ID with your YouTube video ID once the site is up -->
+        <iframe 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="YouTube video" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+</html>
