@@ -19,9 +19,10 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #fff;
             text-align: center;
+            padding: 20px;
         }
 
         /* Header styles */
@@ -44,9 +45,24 @@
             font-size: 1.2rem;
             font-weight: 400;
             margin-bottom: 2rem;
-            padding: 0 20px;
             line-height: 1.6;
             max-width: 600px;
+        }
+
+        /* Image container */
+        .image-container {
+            margin: 20px auto;
+            max-width: 400px;
+            width: 90%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* Video container */
@@ -70,8 +86,15 @@
     <h1>Welcome to BaseJanton</h1>
     <h2>The home of a unique love story</h2>
     <p class="content"><strong>Speakers loud, screen bright, and enjoy in all its full HD glory</strong></p>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="68c27624-da8e-413b-98a6-c8dbe58bcbb2.jpeg" alt="A meaningful image for the site">
+    </div>
+
+    <!-- Video Section -->
     <div class="video-container">
-        <!-- Replace YOUR_VIDEO_ID with your YouTube video ID once the site is up -->
+        <!-- Replace YOUR_VIDEO_ID with your YouTube video ID -->
         <iframe 
             src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
             title="YouTube video" 
