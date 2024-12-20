@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black; /* Black background */
+            font-family: 'Montserrat', sans-serif;
+            color: #FFA500; /* Orange text */
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            padding: 20px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-decoration: underline;
+            text-transform: none;
+            margin-bottom: 20px;
+        }
+
+        .overlay h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .overlay p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #FFA500; /* Orange button */
+            color: black; /* Black text on button */
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background: #FF8C00; /* Slightly darker orange on hover */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header img {
+                max-width: 70%;
+            }
+
+            .header h2 {
+                font-size: 1rem;
+            }
+
+            .overlay h1 {
+                font-size: 1.5rem;
+            }
+
+            .overlay p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- YouTube Video Embed -->
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Overlay Content -->
+    <div class="overlay">
+        <!-- Header Section -->
+        <div class="header">
+            <!-- Logo Image -->
+            <img src="logo.png" alt="BASEJANTON Logo">
+            <h2>An almost unbelievable journey of friendship and love</h2>
+        </div>
+
+        <h1>Our Love Story</h1>
+        <p>A journey of two hearts, beautifully intertwined over time.</p>
+        <button class="btn" onclick="alert('Welcome to our love story!')">Learn More</button>
+    </div>
+</body>
+</html>
