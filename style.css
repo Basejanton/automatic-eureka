@@ -33,6 +33,13 @@ body, html {
     margin-bottom: 20px;
 }
 
+/* Volume Message Styling */
+.volume-message {
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Minimal space below the message */
+    color: orange;
+}
+
 /* Video Container */
 .video-container {
     display: flex;
